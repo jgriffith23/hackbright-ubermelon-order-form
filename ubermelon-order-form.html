@@ -47,7 +47,7 @@
 
         <p>Place your orders here! You know you want to.</p> 
 
-        <form>
+        <form action="https://ubermelon-order-form.herokuapp.com/process" method="POST">
 
             <label for="firstname">First Name:</label> 
             <input type="text" name="firstname" id="firstname">
@@ -71,9 +71,24 @@
             <input type="radio" name="time" id="time-radio-button" value="am">12:00am-12:00pm
             <input type="radio" name="time" id="time-radio-button" value="pm">12:00pm-12:00am
             <input type="radio" name="time" id="time-radio-button" value="wat">Time is an illusion.
+            <br>
+            <label for="ret-cust-radio-button">Returning Customer?</label>
+            <input type="radio" name="ret-cust" id="ret-cust-radio-button" value="yes">Yes
+            <input type="radio" name="ret-cust" id="ret-cust-radio-button" value="no">No
+            <br>
+            <label for="stats">For Statistical Purposes</label>
+            <input type="checkbox" name="stat" id="stats" value="dog">Dog
+            <input type="checkbox" name="stat" id="stats" value="cat">Cat
+            <input type="checkbox" name="stat" id="stats" value="hedgehog">Hedgehog
+            <input type="checkbox" name="stat" id="stats" value="balloonicorn">Balloonicorn
+            <input type="checkbox" name="stat" id="stats" value="yak">Yak
+            <br>
+            <input type="submit">
 
 
-        </form> 
+
+        </form>
+        <footer>*Quantities given are by the flat.</footer> 
     </body>
 
 </html>
